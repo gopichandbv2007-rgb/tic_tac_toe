@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen" class="screen">
+    <h1>Tic Tac Toe</h1>
+    <p class="subtitle">Smart draw detection enabled</p>
+
+    <button id="startBtn" class="btn primary">Start Game</button>
+    
+
+    <div id="tossArea" class="hidden">
+      <button id="tossBtn" class="btn secondary">Toss</button>
+      <p id="tossText"></p>
+    </div>
+  </div>
+  <div id="gameScreen" class="screen hidden">
+
+    <div class="scoreboard">
+      <div class="score-card x-card">
+        Player X<br><span id="scoreX">0</span>
+      </div>
+      <div class="score-card o-card">
+        Player O<br><span id="scoreO">0</span>
+      </div>
+    </div>
+
+    <p id="leaderText"></p>
+    <p id="status"></p>
+
+    <div class="board">
+      <div class="cell" data-i="0"></div>
+      <div class="cell" data-i="1"></div>
+      <div class="cell" data-i="2"></div>
+      <div class="cell" data-i="3"></div>
+      <div class="cell" data-i="4"></div>
+      <div class="cell" data-i="5"></div>
+      <div class="cell" data-i="6"></div>
+      <div class="cell" data-i="7"></div>
+      <div class="cell" data-i="8"></div>
+    </div>
+
+    <button id="nextBtn" class="btn primary">Next Round</button>
+    <button id="newGameBtn" class="btn secondary">New Game</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
